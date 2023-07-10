@@ -27,9 +27,9 @@ the types of the outputs.
 
 | Function                                         | types of inputs                  | type of output                |
 | ------------------------------------------------ | -------------------------------- | ----------------------------- |
-| `function addFive(number) { return number + 5}`  |                                  |                               |
-| `function sum(A, B) { return A + B }`            |                                  |                               |
-| `function concat(A, B) { return "" + A + B }`    |                                  |                               |
+| `function addFive(number) { return number + 5}`  |        10                        |          15                     |
+| `function sum(A, B) { return A + B }`            |         2 ,3                     |          5                     |
+| `function concat(A, B) { return "" + A + B }`    |         CO,DE                    |          "CO","DE" CODE                     |
 | `document.querySelector`                         |                                  |                               |
 | `window.fetch`                                   |                                  |                               |
 
@@ -88,11 +88,11 @@ Fill in the table using the 'shape' shorthand
 
 | Function      | types of inputs                  | type of output           |
 | ------------- | -------------------------------- | ------------------------ |
-| `getName`     |                                  |                          |
-| `getAge`      |                                  |                          |
-| `makePerson`  |                                  |                          |
-| `birthday`    |                                  |                          |
-| `getDistance` |                                  |                          |
+| `getName`     |  name = "Wasaa" ;                 |      Wasaa              |
+| `getAge`      |   age = 26  ;                     |     26                  |
+| `makePerson`  | name ="Wasaa" ,age = 26   ;       |    Wasaa , 26           |
+| `birthday`    |   age = 26 ;                      |     27                  |
+| `getDistance` |  const x =1;cost y =2; A=20;B=4; |     -1.657               |
 
 ### Function Signatures
 
@@ -117,11 +117,11 @@ For practice, add the function signature to the functions in the table.
 
 | Function      | types of inputs            | type of output             | function signature |
 | ------------- | -------------------------- | -------------------------- | ------------------ |
-| `getName`     |                            |                            |                    |
-| `getAge`      |                            |                            |                    |
-| `makePerson`  |                            |                            |                    |
-| `birthday`    |                            |                            |                    |
-| `getDistance` |                            |                            |                    |
+| `getName`     |     name = "Wasaa" ;       |      Wasaa                 |getName(name):string|                   
+| `getAge`      |    age = 26  ;             |     26                     |  getAge(age):number|                    
+| `makePerson`  | name ="Wasaa" ,age = 26   ;|    Wasaa , 26              |makePerson(name,age):string,number|                    
+| `birthday`    |  age = 26 ;                |     27                     |birthday(person.age):number|                    
+| `getDistance` |const x =1;cost y =2; A=20;B=4;|     -1.657             |getDistance(pointA: Point, pointB: Point): number|
 
 ### Operators as 'Functions'
 
@@ -135,9 +135,9 @@ was a function.
 | Operator   | types of inputs                  | type of output                | function signature                     |
 | ---------- | -------------------------------- | ----------------------------- | -------------------------------------- |
 | \*         | number, number                   | number                        | multiply(a: number, b: number): number |
-| + (string) |                                  |                               |                                        |
-| + (number) |                                  |                               |                                        |
-| -          |                                  |                               |                                        |
+| + (string) |  "string1", "string2"            |   string                      | sum(a:string1, b:string2): string      |
+| + (number) |   number1, number2               |    number                     |  sum(a:number1, b:number2): number     |
+| -          |   number1,number2                |     number                    |  substract(a:number1, b:number2): number|
 | ^          |                                  |                               |                                        |
 | \*\*       |                                  |                               |                                        |
 | \|\|       |                                  |                               |                                        |
